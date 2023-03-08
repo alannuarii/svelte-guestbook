@@ -1,3 +1,5 @@
+import { redirect } from '@sveltejs/kit';
+
 export const actions = {
 	default: async ({ request }) => {
 		const data = await request.formData();
@@ -9,11 +11,11 @@ export const actions = {
 		formData.append('tujuan', data.get('tujuan'));
 		formData.append('foto', data.get('foto'));
 
-		const res = await fetch('https://pltdktm.anpy.my.id/guestbook', {
+		const res = await fetch('http://127.0.0.1:5000/guestbook', {
 			method: 'POST',
 			body: formData
 		});
 
-		return res.json();
+		throw redirect(302, '/greeting');
 	}
 };

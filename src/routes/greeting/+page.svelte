@@ -1,1 +1,1 @@
-<h1>greeting</h1>
+<section></section>

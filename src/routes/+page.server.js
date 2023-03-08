@@ -11,11 +11,11 @@ export const actions = {
 		formData.append('tujuan', data.get('tujuan'));
 		formData.append('foto', data.get('foto'));
 
-		const res = await fetch('http://127.0.0.1:5000/guestbook', {
+		const res = await fetch('https://pltdktm.anpy.my.id/guestbook', {
 			method: 'POST',
 			body: formData
 		});
 
-		throw redirect(302, '/greeting');
+		return res.json()
 	}
 };

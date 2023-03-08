@@ -14,12 +14,14 @@
 			<h4 class="mb-2">SELAMAT DATANG</h4>
 			<h5 class="bg-dark-subtle py-2">Alan Nuari</h5>
 		</div>
-		<div class="d-flex justify-content-center">
-			<a
-				href="https://profile.pltdktm.com/"
-				target="_blank" rel="noreferrer"
-				class="btn btn-primary py-2 w-75 d-flex align-items-center justify-content-center mb-3"
-				><i class="bi-buildings me-2" /> COMPANY PROFILE</a
+		<div class="d-flex justify-content-evenly profile mb-3">
+			<a href="https://profile.pltdktm.com/" class="btn btn-secondary rounded-5">
+				<i class="bi-buildings text-dark" />
+				<h6 class="mb-2">Company Profile</h6></a
+			>
+			<a href="/" class="btn btn-secondary rounded-5">
+				<i class="bi-play-circle text-dark" />
+				<h6 class="mb-2">Safety Induction</h6></a
 			>
 		</div>
 		<div class="card border-ligth mb-3">
@@ -134,5 +136,17 @@
 	}
 	a {
 		border-radius: 15px;
+	}
+	.profile h6 {
+		margin: 0px;
+		font-size: 16px;
+		font-weight: 400;
+	}
+	.profile i {
+		margin: 0px;
+		font-size: 50px;
+	}
+	.profile a {
+		width: 40%;
 	}
 </style>
